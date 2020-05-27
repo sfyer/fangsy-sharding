@@ -2,7 +2,7 @@ server:
   port: 9900
 spring:
   application:
-    name: shard-jdbc
+    name: shard-jdbc-yml
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
   type-aliases-package: com.sun.shard.bean
