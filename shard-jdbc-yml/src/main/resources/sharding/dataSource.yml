@@ -3,12 +3,12 @@ dataSources:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/order1
     username: root
-    password: root
+    password: 123456
   ds1: !!com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/order2
     username: root
-    password: root
+    password: 123456
 shardingRule:  
   tables:
     t_user: 
