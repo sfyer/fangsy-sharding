@@ -61,7 +61,7 @@ public class User {
 		this.password = password;
 	}
 
-	public Integer getCityId() {
+	public Integer getCityId(int i) {
 		return cityId;
 	}
 
