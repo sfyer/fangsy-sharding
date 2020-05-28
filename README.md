@@ -43,6 +43,21 @@ CREATE TABLE `t_user1` (
   `password` varchar(32) DEFAULT NULL COMMENT '密码',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `t_alone_user` (
+	`id` BIGINT NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(64) NULL COMMENT '名称' COLLATE 'utf8_general_ci',
+	`city_id` INT NULL COMMENT '城市',
+	`sex` TINYINT(1) NULL COMMENT '性别',
+	`phone` VARCHAR(32) NULL COMMENT '电话' COLLATE 'utf8_general_ci',
+	`email` VARCHAR(32) NULL COMMENT '邮箱' COLLATE 'utf8_general_ci',
+	`create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+	`password` VARCHAR(32) NULL COMMENT '密码' COLLATE 'utf8_general_ci',
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB;
+
 ```
 
 
